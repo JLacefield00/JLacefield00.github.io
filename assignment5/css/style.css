@@ -1,0 +1,101 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    
+}
+
+
+
+
+
+body {
+	animation: honda 10s forwards;
+	
+}
+
+#myDIV {
+    position: absolute;
+	left: 800px;
+	top:400px;
+	width: 400px;
+	height: 100px;
+	animation: mymove 50s infinite;
+  }
+
+  @keyframes mymove {
+	50% {font-size: 20px;}
+  }
+#container {
+	width:900px;
+	border:1px solid black;
+	margin:auto;
+	position:relative;
+	
+}
+#idk{
+	position: absolute;
+	top:800px;
+	left:700px;
+	border:2px solid orange;
+	padding: 10px;
+	border-radius:25px;
+}
+#help{
+	position:absolute;
+	top:0px;
+	left:725px;
+	animation:mymove 80s infinite;
+}
+#circle { 
+	position:absolute;
+	top:340px;
+	left:750px;
+	height: 150px;  
+	width: 150px; 
+	border: 2px solid black;  
+	border-radius: 50%;  
+	display: inline-block;
+	animation:mymoves 60s infinite;
+}
+#square{
+    position: absolute;
+	top:400px;
+	left:900px;
+	width:40px;
+	height:40px;
+	background: pink; 	
+animation: rotate 30s infinite;
+}
+@keyframes mymoves{
+	10% {border: 12px solid orange;}
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg)
+		translateY(100px) rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg)
+		translatey(100px) rotate(-360deg);
+	}
+  }
+  }
+
+/*@keyframes honda {
+	0% {background:white;}
+	100%{background:navy;}*/
+
+	
+}
+
+
+
+

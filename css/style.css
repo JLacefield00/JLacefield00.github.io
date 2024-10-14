@@ -7,10 +7,11 @@ html, body {
 	height:100%;
 text-align:center;
 background-color:#DCDCDC;
+
 }
 
-h1{font-family: 'Tahoma', sans-serif;}
-h2{font-family: arial, sans-serif;}
+h1{font-family: "Tahoma", sans-serif;}
+h2{font-family: "Arial", sans-serif;}
 
 
 
@@ -24,6 +25,7 @@ html {
     line-height: 1.4em;
 }
 nav ul{
+
 	list-style:none;
 	padding-left:0px;
 }
@@ -57,7 +59,8 @@ img {
 nav li{
 	display:inline;
 	margin:5px;
-}		
+}	
+
 
 
 div#container {

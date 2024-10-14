@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Magic Conch</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	<script>
+
+		function conch(){
+			var answers=[
+			
+			"No",
+		    "Yes",
+			"Maybe",
+			"Nope",
+			"I Dont Think So",
+			"Yep",
+			"Sure",
+			"Nah",
+			"Ask again",
+			"Better luck next time"
+				];
+		
+		var createAnswer= answers[Math.floor(Math.random()*answers.length)];
+		document.getElementById("message").innerHTML =createAnswer;
+
+	} // close conch function
+
+
+	</script>
+</head>
+<img id="shell" src="images/TheConch.png">
+
+
+<body>
+
+  <div id="container">
+
+
+<header>
+	
+	<h1>The Magic Conch</h1>
+
+</header>
+<main>
+
+	<form>
+		<p> Ask the Conch a "Yes" or "No" question, click "pull" to get your response</p>
+		<input type="text">
+		<input type="button" onclick="conch()" value="Pull">
+	</form>
+	
+	<p id="message"> </p>
+	
+</main>
+
+<footer>
+	
+</footer>
+  </div><!-- close "container" -->
+  
+
+</body>
+	
+</html> 

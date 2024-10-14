@@ -32,13 +32,33 @@
 	<figure>
 <img src="img/wavy.jpg">
 	</figure>
+<script>
+
+	document.write("Hello There");
+function announcement(){
+	alert("Now Go Away");
+}//close announcement()
+
+function changeBg(){
+	document.body.style.background = "#ff0101";
+
+}//close changeBg
+
+</script>
+
+<button onclick="announcement()">Say it Back</button>
+<button onclick="changeBg()">Click Me!</button>
+
 
 	<main></main>
 	<footer>
 		<em>
-			<p>John Lacefield 2024&copy;</p>
+			<p>&copy; John Lacefield <span id="year"></span></p>
 		</em>
 	</footer>
+	<script>
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>
   </div><!-- close "container" -->
 
 </body>
