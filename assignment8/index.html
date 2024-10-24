@@ -3,69 +3,75 @@
 <html>
 
 <head>
-	
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
+
 	<title>Find Me</title>
-	
-	<link rel="stylesheet" href="css/style.css">	
-	
+
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
 <body>
 
-  <div id="container">
-
-
-<header>
-	<h1>Hello There</h1>
-
-</header>
-<main>
 	
-	<section id="someonesstuff">
-		
-		<h1></h1>
-		
-		<h2></h2>
-        
-		<p></p>
+	<div id="container">
 
-	</section>
-	<button id="wut">wut</button>
-	<section id="hidden1">
-		
-		<h1></h1>
-        
-		<p>ay yo thats my momma </p>
+
+		<header>
+			<h1>Hello There</h1>
+
+		</header>
+		<main>
+
+			
+			<button id="wut">click me</button>
+			<section id="hidden1">
+
+				<h1></h1>
+
+				<p>why did you click <span id="sure">"me"</span>? </p>
+				<img src="img/Ghost.jpg" alt="Ghost" id="spook">
+				<img src="img/scaredcat.gif" alt="cat" id="scared">
+
+			</section>
+
+		</main>
+
+		<footer>
+			John Lacefield 2024
+		</footer>
+
+	</div><!-- close "container" -->
+	<!-- Link to jQuery on Google Hosted Libraries-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+	<script>
+		$(document).ready(function () {
+			$("section#hidden1").hide();
+			$("#hidden2").hide();
+			$("#spook").hide();
+			$("#scared").hide();
+			$("button#wut").click(function () {
+				$("section#hidden1").slideToggle(1500);
+			});// close click function for wut
+			$("span#sure").click(function() {
+				$("img#spook").toggle();
+			});//ghost click code 
+			$("#spook").click(function() {
+				$("img#scared").fadeIn();
+		}); //scared cat click fade in 
+		$("#scared").click(function(){
+			$("img#scared").fadeOut();
+		});
 	
-	</section>
-	
-</main>
-
-<footer>
-	John Lacefield 2024
-</footer>
-  
-</div><!-- close "container" -->
-    <!-- Link to jQuery on Google Hosted Libraries-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  
-
-<script>
-  $(document).ready(function() {
-$("section#hidden1").hide();
-$("button#wut").click(function(){
-$("section#hidden1").slideToggle(1500);
-});// close click function for wut
-
-
-  }); //close .ready()
-</script>
+		}); //close .ready()
+	</script>
 
 </body>
-	
-</html> 
+
+</html>

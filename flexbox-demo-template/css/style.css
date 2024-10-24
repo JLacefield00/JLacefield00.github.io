@@ -1,9 +1,8 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
-	margin:auto;
+	margin:0px;
 	padding:0px;
 	height:100%;
-	text-align: center;
 }
 
 html {
@@ -13,36 +12,75 @@ html {
 }
 
 
-
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
-body {
 
+body {
+	background:#ccc;
 	
 }
 
 
 #container {
-	padding:10px;
-	border:1px solid white;
-	width:50%;
-	margin:auto;
-	margin-top:20px;
-}
-
-img {
 	width:80%;
-	height:80%;
-
-}
-img#scared{
-	width: 90%;
-	height: 90%;
-	position: relative ;
-	bottom: 223px;
-
+	margin:auto;
+	background:white;
 }
 
+header, footer {
+	background: black;
+	color:white;
+}
+
+header {
+	padding:2em;
+	text-align:center;
+}
+
+footer {
+	padding: 1em;
+}
+
+nav ul {
+	list-style:none;
+	padding-left:0px;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+nav li{
+	flex: 1 0 auto;
+}
+
+
+nav a {
+	display:block;
+	text-decoration:none;
+	padding:1em;
+	border:1px solid red;
+}
+main{
+	clear:both;
+}
+
+
+
+
+figure {
+	margin:0px;
+	border:1px solid black;
+	padding:0.5em;
+	
+}
+
+figure img {
+	width: 100%;
+}
+
+section {
+	background:#fceda9;
+	padding:1em;
+}
 
 
 
@@ -58,21 +96,16 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
-	body{
-		
+	
+	main{
+		display: flex;
 	}
 	
-	#container{
-		width: 700px;
-		margin: auto;
-		
-	}
-	img#scared{
-		
-		position: relative ;
-		bottom: 670px;
+	figure, section{
+		flex: 1 1 50%;
+	}	
+
 	
-	}
 } /* closes 769px+ */
 
 
@@ -81,28 +114,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-	body{
-		
-		
-	#container{
-		width:850px;
-		margin: auto;
-
-	}
-	section#hidden2{
-		position: absolute;
-		top: 400px;
-		left: 330px;
-		width:400px;
-		box-shadow: 20px 20px 10px rgba(0,0,0,0.4);
-	}
-	img#scared{
-		
-		position: relative ;
-		bottom: 800px;
 	
-	}
+	figure, section{
+		flex: 1 1 30%;
+	}	
+	
 } /* closes 1024px+ */
+
+
 
 
 
