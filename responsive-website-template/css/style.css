@@ -14,10 +14,16 @@ html {
 
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
-
+img{
+	height:50%;
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 body {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	background:lightpink;
+	background:#d9b3ff;
 }
 
 
@@ -33,7 +39,9 @@ body {
 
 	
 }
-
+h1{
+	text-align:center;
+}
 
 
 
@@ -51,15 +59,24 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
+	img{
+		height:60%;
+		width: 60%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	body{
-		background:orange;
+		background:#ff80df;
 	}
 	
 	#container{
 		width: 75%;
 		
 	}
-	
+	h1{
+		text-align:center;
+	}
 } /* closes 769px+ */
 
 
@@ -67,9 +84,15 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
-	
+	img{
+		height:80%;
+		width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	body{
-		background: lightblue;
+		background: #80ffbf;
 	}
 	#container{
 		width:800px;
