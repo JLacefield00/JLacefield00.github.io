@@ -1,0 +1,124 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+		background:rgb(220,220,220); /*light grey*/
+}
+
+
+#container {
+	background:white;
+	padding:2em;
+}
+
+
+
+button {
+	background:red;
+	color:white;
+	padding:0.5em;
+	margin:1em 0px;
+	border:0px;
+	border-radius:4px;
+	cursor:pointer;
+	box-shadow:1px 1px 3px rgba(0,0,0,0.4);
+}
+
+button:hover {
+	background:rgb(210,0,0); /*darker red*/
+	box-shadow:none;
+}
+
+
+p {
+	background:black;
+	color:white;
+	padding:1em;
+	margin:0.5em;
+}
+	
+p#ipsum {
+	background:orange;
+}
+
+
+/* This is a class that will be used later... */
+.forest {
+	background:url('../img/forest.jpg') no-repeat,center;
+	background-size:cover;
+	}
+
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+#container {
+	width:600px;
+	margin:auto;
+}	
+
+	
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+#container {
+	width:800px;
+}	
+
+	
+} /* closes 1024px+ */
+
+
+
+
+

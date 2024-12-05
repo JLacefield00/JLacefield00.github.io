@@ -1,0 +1,200 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	
+	
+}
+a#dropdown-menu{
+	color:black;
+	text-decoration:none;
+	font-size:3em;
+	position:absolute;
+	top:20px;
+	right:10px;
+}
+
+#container {
+	width:95%;
+	margin:auto;
+}
+
+
+nav{
+	display:none;
+}
+
+
+nav ul {
+	margin-top:0px;
+	list-style:none;
+	padding-left:0px;
+}
+
+
+/* Buttonize links */
+nav a {
+	text-decoration:none;
+	color:white;
+	background:black;
+	border-radius:3px;
+	display:block;
+	padding:8px;
+	text-align:center;
+	font-size:2em;
+	margin-bottom:4px;
+}
+
+
+nav a:hover {
+	background:orange;
+}
+
+figure {
+	margin:0px;
+}
+
+img {
+	width:100%;
+}
+
+footer {
+	font-size:0.85em;
+}
+
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+======================================== */
+
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
+	
+/* Make <nav> items line up horizontally */
+
+nav{
+	display:block;
+}
+
+a#dropdown-menu{
+	display:none;
+}
+nav ul {
+	display:flex;
+}
+
+nav li {
+	display:inline-block;
+	flex:1 1 auto;
+}
+
+nav a {
+	font-size:1em;
+	color:black;
+	background:none;
+	border: 1px solid #ccc;
+}
+
+
+	
+	
+} /* closes 768px+ */
+
+
+
+
+/* New CSS for desktop sizes.
+You can change the pixel number below */
+@media all and (min-width: 1024px) {
+	
+#container {
+	width:950px;
+}
+
+nav ul {
+	display:block;
+}
+
+/* Revert list-items to strong block-level elements, like with the mobile view */
+nav li {
+	display:block;
+}
+
+
+nav a {
+	color:white;
+	background:black;
+}
+
+nav {
+width:20%;
+float:left;
+}
+
+
+main {
+	width:75%;
+	float:right;
+}
+
+footer {
+	clear:both;
+}
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+
