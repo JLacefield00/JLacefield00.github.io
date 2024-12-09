@@ -14,29 +14,45 @@ html {
 
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
-img{
-	height:50%;
-	width: 50%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 body {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	background:#d9b3ff;
+	background:url(../img/FrontStreetDrift.png)fixed no-repeat center;
+	background-size: cover;
 }
 
 
 #container {
 	padding:10px;
 	border:1px solid white;
-	width:50%;
+	width:95%;
 	margin:auto;
-	margin-top:20px;
+	
+} 
+section{
+	border:3px white;
+	margin-bottom: 2em;
+	padding:20px
+}
 
+section#redbull{
+	background:url(../img/FrontStreetDrift.png);
+	background-size:cover
+	border-radius:20px;
+	color:white;
+	border-color:whitesmoke;
+	line-height: 30px;
+	border-color: whitesmoke;
+}
 
-
-
+section#response{
+	background:url(../img/FrontStreetDrift.png);
+	background-size:cover
+	border-radius:20px;
+	border-color: whitesmoke;
+	color:white;
+	line-height: 30px;
+}
 	
 }
 h1{
@@ -71,22 +87,24 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		background:#ff80df;
 	}
 	
-	.redbull{ 
+	section#redbull{ 
 		float:left;
-		width:50%;
-		padding:10px;
+		width:42%;
+		padding:5px;
     }
 	
-	.response:row{
-		content:"";
-		display:table;
-		clear:both;
-	}
+section#response{
+	float:right;
+	width:43%;
+}
+
 	
 	#container{
-		width: 75%;
+		width: 80%;
 	}
-	
+	footer{
+		clear:both;
+	}
 	h1{
 		text-align:center;
 	}
@@ -105,24 +123,10 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		margin-right: auto;
 	}
 	
-	body{
-		background: #80ffbf;
-	}
-	
-	.redbull{ 
-		float:left;
-		width:50%;
-		padding:10px;
-    }
-	
-	.response:row{
-		content:"";
-		display:table;
-		clear:both;
-	}
-	
+
 	#container{
-		width:800px;
+		width:950px;
+		padding:20px;
 
 	}
 	h1{
