@@ -1,0 +1,72 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+
+
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+text-align:center;
+background-color:#DCDCDC;
+
+}
+
+h1{font-family: "Tahoma", sans-serif;}
+h2{font-family: "Arial", sans-serif;}
+
+
+
+
+
+
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+nav ul{
+
+	list-style:none;
+	padding-left:0px;
+}
+nav li{
+	/*display:inline;*/
+	margin:5px;
+
+}
+nav {
+background-color: #ffffff;
+width: 400px;
+margin: auto;
+}
+html, body{
+	
+	margin: 0px;
+	padding:0px ;
+	height: 100%;
+}
+div#container{
+	padding: 10px;
+	margin: auto;
+	width: 1000px;
+
+}
+
+
+img {
+	width:400px;
+}
+nav li{
+	display:inline;
+	margin:5px;
+}	
+
+
+
+div#container {
+	
+}
+
+
+
+
