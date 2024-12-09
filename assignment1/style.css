@@ -1,0 +1,60 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:20px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color:lightgray;
+    color:darkslategrey;
+    
+}
+
+
+div#container {
+	width:800px;
+    border:1px solid darkolivegreen;
+    margin:auto;
+    padding:40px;
+    background-color:lightgray;
+    margin-bottom: auto;
+    border-radius:50px;
+}
+
+header {
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:darkolivegreen;
+    border:solid lightgray;
+    border-radius:15px;
+    
+}
+
+h1,h2 {
+    margin:30px;
+    
+    
+}
+
+footer {
+    font-size:0.8em;
+    font-family:Geneva, Arial Black, sans-serif;
+    color:lightgray;
+    
+}
+
+img {
+    width:100%;
+    
+}
