@@ -66,14 +66,27 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
 	body{
 		background:#ff80df;
 	}
 	
+	.redbull{ 
+		float:left;
+		width:50%;
+		padding:10px;
+    }
+	
+	.response:row{
+		content:"";
+		display:table;
+		clear:both;
+	}
+	
 	#container{
 		width: 75%;
-		
 	}
+	
 	h1{
 		text-align:center;
 	}
@@ -91,9 +104,23 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
 	body{
 		background: #80ffbf;
 	}
+	
+	.redbull{ 
+		float:left;
+		width:50%;
+		padding:10px;
+    }
+	
+	.response:row{
+		content:"";
+		display:table;
+		clear:both;
+	}
+	
 	#container{
 		width:800px;
 
