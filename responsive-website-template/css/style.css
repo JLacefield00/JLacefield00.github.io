@@ -21,6 +21,12 @@ body {
 	background-size: cover;
 }
 
+img{
+	height: auto;
+	max-width: 100%;
+	align-self: center;
+}
+
 
 #container {
 	padding:10px;
@@ -122,7 +128,9 @@ section#response{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+	body{
+		background:#53edb7;
+	}
 
 	#container{
 		width:950px;
