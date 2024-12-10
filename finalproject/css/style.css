@@ -10,27 +10,191 @@ html {
 	font-size: 1em;
     line-height: 1.4em;
 }
-nav ul{
-	display:flex;
-	justify-content:space-evenly;
-		
-	}
-	
-	nav {
-	background-color: #ffffff;
-	width: auto;
-	margin: auto;
-	
-	}
+
 
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
-nav ul{
-	
-	flex-direction:column;
-	
+
+body {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background:lightgray;
+	margin:10px;
+	border:2px;
+	border-color:white;
 }
 
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 0.8rem;
+    background-color:orangered;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color:red;
+}
+
+/*form styling end */
+
+/* Membership Tiers Section */
+.membership-tiers {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.tier {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tier h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: orangered;
+}
+
+.tier p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tier ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.tier ul li {
+    margin: 0.5rem 0;
+}
+
+.tier .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.tier button {
+    padding: 0.8rem 1.5rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tier button:hover {
+    background-color: red;
+}
+/*membership tier end */
+/* navigation header*/
+nav ul {
+	list-style: none;
+	padding-left: 0px;
+	border:2px;
+	border-color:black;
+	color: #000;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	padding: 10px;
+  }
+  
+  nav ul {
+	list-style: none;
+	padding-left: 0px;
+	border:2px;
+	border-color:black;
+	color: #000;
+	text-align: center;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	padding: 10px;
+  }
+  
+  nav ul.inline li{
+	display:inline;
+  }
+  
+  nav li {
+	list-style: none;
+	padding-left: 0px;
+	border:0px solid black;
+	margin:10px;
+	color: #000;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	padding: 10px;
+	padding-top: 10px;
+  }
+  
+  nav a {
+	color: black;
+	text-decoration:none;
+	padding:4px;
+  }
+  
+  a:hover {
+	color:white;
+	background: orangered;
+	text-decoration: none;
+	height: 200px;
+	width: 250px;
+	border-radius: 70%;
+	padding: 10px;
+  }
+/* navigation header end */
+
+figure img{
+	width:40%;
+	margin:auto;
+}
 img{
 	height:60%;
 	width: 60%;
@@ -38,15 +202,12 @@ img{
 	margin-left: auto;
 	margin-right: auto;
 }
-body {
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	background:lightgray;
-}
+
 
 
 #container {
 	padding:10px;
-	border:1px solid white;
+	
 	width:80%;
 	margin:auto;
 	margin-top:20px;
@@ -58,11 +219,15 @@ body {
 }
 h1{
 	text-align:center;
+	color:orangered;
 }
 h2{
 	text-align: center;
+	color:orangered;
 }
-
+p{
+	text-align:center;
+}
 
 
 
@@ -78,8 +243,13 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
+	
 	nav ul{
      flex-direction: row;
+}
+figure img{
+	width:40%;
+	margin:auto;
 }
 	img{
 		height:30%;
@@ -93,24 +263,57 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		background:lightgray;
 		
 	}
-	.footer{
-		position:fixed;
-		bottom:0;
-		left:0;
+
+	/*membership tiers */
+
+	.membership-tiers {
+		display: flex;
+		flex-direction: row; /* Stack items vertically */
+		justify-content:center;
+		gap: 1rem;
+		margin: 1rem;
 	}
+
+/*for home page */
 
 	.intro{ 
 		float:left;
-		width:50%;
+		width:45%;
 		padding:10px;
 
 
 	}
-	.discovery:row{
-		content:"";
-		display:table;
-		clear:both;
+	.discovery{
+	float:right;
+	width:45%;
+	padding:10px;
 	}
+	/*for home page*/ 
+
+	//for founders page
+img{
+	height:60%;
+	width:60%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	
+}
+	.mark{ 
+		float:left;
+		width:42%;
+		padding:5px;
+
+
+	}
+	.owen{
+float:right;
+width:43%;
+	}
+	
+
+	/*for founders page*/
 	#container{
 		width: 80%;
 		
@@ -120,6 +323,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	}
 	h2{
 		text-align: center;
+	}
+	h3{
+		text-align: center;
+	}
+	
+
+	footer{
+		clear:both;
 	}
 } /* closes 769px+ */
 
@@ -132,6 +343,12 @@ You can adjust the min-width numbers below, and add as many new media queries as
 flex-direction: row;
 
 	}
+
+	figure img{
+		width:25%;
+		margin:auto;
+	}
+
 	img{
 		height:15%;
 		width: 15%;
@@ -140,7 +357,18 @@ flex-direction: row;
 		margin-right: auto;
 	
 	}
+	.mark{ 
+		float:left;
+		width:42%;
+		padding:5px;
 
+
+	}
+	.owen{
+float:right;
+width:43%;
+	}
+	
 	body{
 		background:lightgray;
 	}

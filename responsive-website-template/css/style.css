@@ -82,8 +82,8 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	img{
-		height:60%;
-		width: 60%;
+		height:80%;
+		width: 80%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -110,6 +110,7 @@ section#response{
 	}
 	footer{
 		clear:both;
+		
 	}
 	h1{
 		text-align:center;
