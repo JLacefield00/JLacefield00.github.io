@@ -22,6 +22,69 @@ body {
 	border:2px;
 	border-color:white;
 }
+h1{
+	text-align:center;
+	color:orangered;
+}
+h2{
+	text-align: center;
+	color:orangered;
+}
+p{
+	text-align:center;
+}
+
+
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    grid-template-columns: 1fr; /* Default to single-column layout */
+}
+
+/* Product Cards */
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 6rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width:100%;
+    border-radius: 4px;
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product button {
+    padding: 0.8rem 1.5rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.product button:hover {
+    background-color: red;
+}
+
+
 
 /* Form Styling */
 .contact-form {
@@ -212,22 +275,33 @@ img{
 	margin:auto;
 	margin-top:20px;
 
+/* broaden text and images */
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background:lightgray;
+    border-radius: 8px;
+    
 
+/* Paragraph Styling */
+.content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
 
+/* Images */
+.content-image {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+} /*close main*/
 
-	
-}
-h1{
-	text-align:center;
-	color:orangered;
-}
-h2{
-	text-align: center;
-	color:orangered;
-}
-p{
-	text-align:center;
-}
 
 
 
@@ -243,7 +317,20 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
+
+	/* Responsive Design for Desktop */
 	
+	.membership-tiers {
+		display: flex;
+		flex-direction: row; 
+		gap: 4rem;
+		margin:.1rem;
+	}
+	
+	.product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    }
+}
 	nav ul{
      flex-direction: row;
 }
@@ -251,7 +338,7 @@ figure img{
 	width:40%;
 	margin:auto;
 }
-	img{
+	#logo{
 		height:30%;
 		width: 30%;
 		display: block;
@@ -259,21 +346,26 @@ figure img{
 		margin-right: auto;
 	
 	}	
+	
+	}
 	body{
 		background:lightgray;
 		
 	}
 
-	/*membership tiers */
+	.mark{ 
+		float:left;
+		width:42%;
+		padding:5px;
 
-	.membership-tiers {
-		display: flex;
-		flex-direction: row; /* Stack items vertically */
-		justify-content:center;
-		gap: 1rem;
-		margin: 1rem;
+
+	}
+	.owen{
+	float:right;
+	width:43%;
 	}
 
+	
 /*for home page */
 
 	.intro{ 
@@ -290,30 +382,19 @@ figure img{
 	}
 	/*for home page*/ 
 
-	//for founders page
-img{
-	height:60%;
-	width:60%;
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-
-	
-}
-	.mark{ 
-		float:left;
-		width:42%;
-		padding:5px;
 
 
-	}
-	.owen{
-float:right;
-width:43%;
-	}
-	
+
 
 	/*for founders page*/
+	img{
+		height:60%;
+		width:60%;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
 	#container{
 		width: 80%;
 		
@@ -332,13 +413,21 @@ width:43%;
 	footer{
 		clear:both;
 	}
-} /* closes 769px+ */
+ /* closes 769px+ */
 
 
 
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
+	
+	
+	.product-grid {
+        grid-template-columns: repeat(4, 1fr); /* Four columns on desktop */
+        gap: 2rem; /* Increase spacing between items */
+    }
+	
+	
 	nav ul{
 flex-direction: row;
 
@@ -357,17 +446,7 @@ flex-direction: row;
 		margin-right: auto;
 	
 	}
-	.mark{ 
-		float:left;
-		width:42%;
-		padding:5px;
-
-
-	}
-	.owen{
-float:right;
-width:43%;
-	}
+	
 	
 	body{
 		background:lightgray;
@@ -399,7 +478,7 @@ width:43%;
 	h2{
 		text-align: center;
 	}
-
+	
 } /* closes 1024px+ */
 
 
