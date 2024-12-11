@@ -22,17 +22,7 @@ body {
 	border:2px;
 	border-color:white;
 }
-h1{
-	text-align:center;
-	color:orangered;
-}
-h2{
-	text-align: center;
-	color:orangered;
-}
-p{
-	text-align:center;
-}
+
 
 
 
@@ -300,10 +290,28 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-} /*close main*/
 
 
 
+h1{
+	text-align:center;
+	color:orangered;
+	margin: center;
+	padding:30px;
+	font-size: 2em;
+	line-height: 1em;
+}
+h2{
+	text-align: center;
+	color:orangered;
+	margin: center;
+	font-size: 1.4em;
+	padding:30px
+}
+p{
+	text-align:center;
+	margin: center;
+}
 
 
 
