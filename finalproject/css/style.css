@@ -490,6 +490,12 @@ flex-direction: row;
 	h2{
 		text-align: center;
 	}
+	footer{
+		position:fixed;
+		bottom:0;
+		left:0;
+		clear:both;
+	}
 	
 } /* closes 1024px+ */
 
