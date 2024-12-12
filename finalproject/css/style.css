@@ -326,6 +326,51 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 
+	/* type */
+
+h2{
+	text-align: center;
+	color: orangered;
+}
+h3{
+	text-align: center;
+}
+/* broaden page */
+#videotweet{
+	height:auto;
+	width:80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#texttweet{
+	height:auto;
+	width:80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#peoplewatch{
+	height:auto;
+	width:80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#paint1{
+	height:auto;
+	width:80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#paint2{
+	height:auto;
+	width:80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 	/* Responsive Design for Desktop */
 	
 	.membership-tiers {
@@ -339,7 +384,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
         grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
 		align-items: center;
     }
-
+	
 	nav ul{
      flex-direction: row;
 }
@@ -361,21 +406,7 @@ figure img{
 		background:lightgray;
 		
 	}
-/*founders*/
-	.mark{ 
-		float:left;
-		width:42%;
-		padding:5px;
 
-
-	}
-	.owen{
-	float:right;
-	width:43%;
-	}
-
-	
-/*for home page */
 
 	#homeflex {
 		display: flex;
@@ -404,21 +435,39 @@ figure img{
 		margin-left:auto;
 		margin-right:auto;
 	}
+	#mark{
+		height:auto;
+		width:80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}	
+	#owen{
+		height:auto;
+		width:60%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}	
+	.mark{ 
+		float:left;
+		width:42%;
+		padding:5px;
+
+
+	}
+	.owen{
+	float:right;
+	width:43%;
+	}
 
 	#container{
-		width: 80%;
+		width: 90%;
 		
 	}
-	h1{
-		text-align:center;
-	}
-	h2{
-		text-align: center;
-	}
-	h3{
-		text-align: center;
-	}
-	
+
 
 	footer{
 		position:fixed;
@@ -434,13 +483,25 @@ figure img{
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
-	
+	.mark{ 
+		float:left;
+		width:45%;
+		padding:5px;
+
+
+	}
+	.owen{
+	float:right;
+	width:45%;
+	}
+
 	
 	.product-grid {
-        grid-template-columns: repeat(3, 1.1fr); /* Four columns on desktop */
-        gap: 4rem; /* Increase spacing between items */
-		align-items: center;
-    }
+		display: grid;
+		gap: 2rem;
+		padding: 1rem;
+		grid-template-columns: repeat (3, 1fr);
+	}
 	
 	
 	nav ul{
