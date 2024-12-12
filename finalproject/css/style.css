@@ -359,7 +359,7 @@ figure img{
 		background:lightgray;
 		
 	}
-
+/*founders*/
 	.mark{ 
 		float:left;
 		width:42%;
@@ -419,7 +419,10 @@ figure img{
 	
 
 	footer{
-		clear:both;
+		position:fixed;
+		bottom:0;
+		left:0;
+		
 	}
  /* closes 769px+ */
 
