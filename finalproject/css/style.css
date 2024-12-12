@@ -264,6 +264,7 @@ img{
 	width:80%;
 	margin:auto;
 	margin-top:20px;
+}
 
 /* Main Content */
 main {
@@ -272,7 +273,7 @@ main {
     padding: 1rem;
     background:lightgray;
     border-radius: 8px;
-    
+}
 
 /* Paragraph Styling */
 .content p {
@@ -337,7 +338,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	.product-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
     }
-}
+
 	nav ul{
      flex-direction: row;
 }
@@ -424,6 +425,7 @@ figure img{
 		left:0;
 		clear:both;
 	}
+}
  /* closes 769px+ */
 
 
