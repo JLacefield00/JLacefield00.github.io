@@ -422,7 +422,7 @@ figure img{
 		position:fixed;
 		bottom:0;
 		left:0;
-		
+		clear:both;
 	}
  /* closes 769px+ */
 
