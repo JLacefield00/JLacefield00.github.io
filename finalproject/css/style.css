@@ -337,6 +337,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	
 	.product-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+		align-items: center;
     }
 
 	nav ul{
@@ -436,8 +437,9 @@ figure img{
 	
 	
 	.product-grid {
-        grid-template-columns: repeat(4, 1fr); /* Four columns on desktop */
-        gap: 2rem; /* Increase spacing between items */
+        grid-template-columns: repeat(3, 1.1fr); /* Four columns on desktop */
+        gap: 4rem; /* Increase spacing between items */
+		align-items: center;
     }
 	
 	
